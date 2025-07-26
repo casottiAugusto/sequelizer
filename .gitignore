@@ -14,7 +14,7 @@ yarn.lock
 *.sqlite
 *.sqlite3
 *.db
-mysql_data/
+
 
 # Logs
 logs/

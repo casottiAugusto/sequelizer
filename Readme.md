@@ -22,20 +22,20 @@ Este repositório contém exemplos práticos de como utilizar o Sequelize para c
 
 - [Node.js](https://nodejs.org/) >= 14.x
 - [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
-- Um banco de dados relacional (MySQL, PostgreSQL, SQLite, etc.)
+- Um banco de dados relacional (MySQL)
 
 ## Instalação
 
 ```bash
 git clone https://github.com/seu-usuario/sequelize-exemplo.git
-cd sequelize-exemplo
+cd sequelize
 npm install
 ```
 
 ## Configuração
 
 1. Renomeie `.env.example` para `.env` e configure as variáveis de ambiente do banco de dados.
-2. Edite o arquivo `config/config.js` conforme necessário.
+2. Edite o arquivo `db/config.js` conforme necessário.
 
 ## Comandos Úteis
 
@@ -56,12 +56,12 @@ npm install
 
 ```
 .
-├── config/
-├── migrations/
+├── db/
 ├── models/
-├── seeders/
-├── src/
+├── public/
+├── views/
 ├── .env
+├── index.js
 ├── package.json
 └── Readme.md
 ```

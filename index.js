@@ -1,5 +1,5 @@
 const express = require('express');
-const conn = require('./db/confg.js');
+const conn = require('./db/config.js');
 const hbs = require('express-handlebars');
 const app =express();
 
