@@ -90,3 +90,11 @@ Contribuições são bem-vindas! Abra uma issue ou envie um pull request.
 ## Licença
 
 [MIT](LICENSE)
+
+## Contato
+
+Dúvidas ou sugestões? Entre em contato pelo [GitHub Issues](https://github.com/seu-usuario/sequelize-exemplo/issues) ou envie um e-mail para seu-email@exemplo.com.
+
+---
+
+> Este guia faz parte do curso **Node.js do Zero à Maestria**.
