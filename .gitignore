@@ -8,12 +8,13 @@ yarn.lock
 
 # Environment variables
 .env
-.env.*
+
 
 # Sequelize
 *.sqlite
 *.sqlite3
-*db
+*.db
+mysql_data/
 
 # Logs
 logs/

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "express-handlebars": "^8.0.3",
     "mysql2": "^3.14.2",
@@ -8,7 +9,7 @@
   },
   "name": "sequelize",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este projeto demonstra o uso do [Sequelize](https://sequelize.org/), um ORM para Node.js, facilitando a manipulação de bancos de dados relacionais.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +18,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casottiAugusto/sequelizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/casottiAugusto/sequelizer/issues"
+  },
+  "homepage": "https://github.com/casottiAugusto/sequelizer#readme"
 }
