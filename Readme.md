@@ -93,7 +93,7 @@ Contribuições são bem-vindas! Abra uma issue ou envie um pull request.
 
 ## Contato
 
-Dúvidas ou sugestões? Entre em contato pelo [GitHub Issues](https://github.com/seu-usuario/sequelize-exemplo/issues) ou envie um e-mail para seu-email@exemplo.com.
+Dúvidas ou sugestões? Entre em contato pelo [GitHub Issues](https://github.com/seu-usuario/sequelize-exemplo/issues) ou envie um e-mail para augusto_casotti@hotmail.com.
 
 ---
 
