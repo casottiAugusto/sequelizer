@@ -2,7 +2,8 @@ const express = require('express');
 const conn = require('./db/config.js');
 const hbs = require('express-handlebars');
 const app =express();
-const User = require('./model/User');
+const User = require('./model/User.js');
+const Adress = require('./model/Adress.js');
 
 const port=3000;
 
@@ -42,7 +43,40 @@ app.get('/users/edit/:id', async (req, res) => {
     
     res.render("useredi", { user });  
 })
+app.post('/users/edit', async (req, res) => {
+    const id = req.body.id;
+    const name = req.body.name;
+    const occupation = req.body.occupation;
+    let newsletter = req.body.newsletter;   
+    if (newsletter === 'on') {
+        newsletter = true;
+    } else {
+        newsletter = false;
+    }   
+    const dataUpdate = {
+        id,
+        name,
+        occupation,
+        newsletter 
+    }   
+    await User.update(dataUpdate, { where: { id: id } });
+    res.redirect('/');});
 
+app.post("/address/create", async (req, res) => {
+  const street = req.body.street;
+  const Number = req.body.number;
+  const city = req.body.city;
+  const userId = req.body.userId;
+  const address = {
+    street,
+    Number,
+    city,
+    UserId: userId,
+  };
+  console.log(address);
+  await Adress.create(address);
+  res.redirect(`/users/edit/${userId}`);
+});
 
 
 app.get('/',async (req, res) => {
@@ -61,7 +95,9 @@ app.get('/users/:id', async (req, res) => {
 
 
 
-conn.sync()
+conn
+.sync()
+  //  .sync({ force: false }) // Use force: true to drop and recreate the table   
     .then(() => {
         console.log('Conexão com o banco de dados estabelecida com sucesso.');
         app.listen(`${port}`, () => {
